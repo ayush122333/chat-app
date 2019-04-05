@@ -4,16 +4,17 @@
   "description": "",
   "main": "connection.js",
   "scripts": {
-    "start":"node server/server.js",
+    "start": "node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-    "engines":{
-        "node":"10.15.1"
-    },
+  "engines": {
+    "node": "10.15.1"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.4",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "socket.io": "^2.2.0"
   }
 }
