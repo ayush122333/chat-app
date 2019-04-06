@@ -1,20 +1,35 @@
 <! doctype>
 <html>
 <head> 
+    <link rel="stylesheet", href="index.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-<body style="background: white; text-align: center">
-    <h1 style="color: darkgrey"> WELCOME TO FREE CHATTING APP</h1>
+<body class="chat">
     
-    <ol id="messages"></ol>
+    <div class="chat__sidebar">
+        
+    <h3>people</h3>
+        
+    <div id="users"></div>
+        
+    </div>
     
-    <form id="message-form" style="text-align: center">
-    <input name="message" type="text" placeholder="message"/>
-    <button style="text-align: center">SEND</button>
-    </form>
     
-   <script src="/socket.io/socket.io.js"></script>
+             <div class="chat__main">
+             <ol id="messages" class="chat__messages"></ol>
+            
+                 <div class="chat__footer">
+                 
+             <form id="message-form">
+             <input name="message" type="text" placeholder="message" autofocus autocomplete="off"/>
+             <button>SEND</button>
+             </form>
+                     
+                 </div>
+             </div>
+
+    <script src="/socket.io/socket.io.js"></script>
     <script src="/js/libs/jquery-3.3.1.min.js"></script>
     <script src="/js/index.js"></script>
    
